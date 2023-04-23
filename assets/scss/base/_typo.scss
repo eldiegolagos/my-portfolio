@@ -1,0 +1,24 @@
+@import url("https://use.typekit.net/ezz6wym.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600&display=swap');
+
+$fonts: (
+  'kepler': kepler-std,
+  'barlow': Barlow Condensed
+);
+$font-weight: (
+  'extralight': 200,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700
+);
+
+
+h1 {
+  font-family: map-get($fonts , 'kepler');
+  font-weight: map-get($font-weight , 'semibold');
+  font-style: italic;
+  letter-spacing: -7px;
+  font-size: 4rem;
+}
