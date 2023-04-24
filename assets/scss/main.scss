@@ -1,7 +1,6 @@
 @import 'base/reset';
-@import 'base/typo';
-@import 'base/colors';
 @import 'base/variables';
+@import 'base/typo';
 
 @import 'layout/breakpoints';
 @import 'layout/grid';
@@ -12,4 +11,5 @@
 body {
   background: $dark;
   color: $light;
+  font-family: map-get($fonts, 'barlow');
 }

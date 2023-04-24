@@ -1,0 +1,48 @@
+// Font Import
+@import url("https://use.typekit.net/ezz6wym.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600&display=swap');
+
+// Colors
+$dark:               #262626;
+$light:              #D8D9C5;
+$light-60:           rgba(216, 217, 197,.6);
+$light-45:           rgba(216, 217, 197,.45);
+$light-30:           rgba(216, 217, 197,.3);
+$gray:               #F2F2f2;
+$claret:             #741e29;
+$shadow:             #B9BF8E;
+$dark-green:         #3E3F2D;
+$color-success:      #36BF7F;
+$color-warning:      #F2E205;
+$color-important:    #F23D3D;
+
+// Typography
+$fonts: (
+  'kepler':          kepler-std,
+  'barlow':          Barlow Condensed
+);
+$font-weight: (
+  'extralight':      200,
+  'light':           300,
+  'regular':         400,
+  'medium':          500,
+  'semibold':        600,
+  'bold':            700
+);
+
+// Spacing
+$padding-all:        .75rem;
+$marging-all:        .75rem;
+
+// Borders
+$border:             1px solid $light-30;
+$border-card:        2px solid $light;
+$border-radius:      50px;
+
+// Shadows
+$boxShadow:          0.25rem 0.25rem $shadow;
+
+// Transition
+$transition-200:     all 200ms ease;
+$transition-500:     all 500ms ease;
+
