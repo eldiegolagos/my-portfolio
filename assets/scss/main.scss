@@ -1,8 +1,15 @@
 @import 'base/reset';
 @import 'base/typo';
 @import 'base/colors';
+@import 'base/variables';
 
 @import 'layout/breakpoints';
 @import 'layout/grid';
 
-@import 'components/accordion'
+@import 'components/accordion';
+
+
+body {
+  background: $dark;
+  color: $light;
+}
