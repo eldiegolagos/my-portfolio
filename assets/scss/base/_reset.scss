@@ -17,9 +17,6 @@ html, body, div {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol, ul {
   list-style: none;
   padding: 0;
@@ -38,4 +35,10 @@ table {
 }
 a {
   text-decoration: none;
+}
+body {
+  line-height: 1;
+  background: $dark;
+  color: $light;
+  font-family: map-get($fonts, 'barlow');
 }
