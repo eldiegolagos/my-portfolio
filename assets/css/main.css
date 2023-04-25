@@ -1,3 +1,4 @@
+/*  RESET */
 @import url("https://use.typekit.net/ezz6wym.css");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600&display=swap");
 * {
@@ -49,6 +50,7 @@ a {
   text-decoration: none;
 }
 
+/*  TIPOGRAPHY */
 h1 {
   font-family: kepler-std;
   font-weight: 600;
@@ -57,6 +59,7 @@ h1 {
   font-size: 4rem;
 }
 
+/* GRID */
 .container {
   width: 100%;
   padding: 0 15px;
@@ -206,6 +209,7 @@ h1 {
   }
 }
 
+/* ACCORDION */
 body {
   background: #262626;
   color: #D8D9C5;
