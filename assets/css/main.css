@@ -3,15 +3,18 @@
 * {
   color: inherit;
   margin: 0;
+  box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html, body, div {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  display: block;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -52,6 +55,155 @@ h1 {
   font-style: italic;
   letter-spacing: -7px;
   font-size: 4rem;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 576px) {
+  .row {
+    gap: 0;
+  }
+}
+.row .col {
+  padding: 20px;
+  border: 1px solid rgba(216, 217, 197, 0.3);
+}
+.row .col.size-1 {
+  grid-column: span 1;
+}
+@media (max-width: 576px) {
+  .row .col.size-1 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-2 {
+  grid-column: span 2;
+}
+@media (max-width: 576px) {
+  .row .col.size-2 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-3 {
+  grid-column: span 3;
+}
+@media (max-width: 576px) {
+  .row .col.size-3 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-4 {
+  grid-column: span 4;
+}
+@media (max-width: 576px) {
+  .row .col.size-4 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-5 {
+  grid-column: span 5;
+}
+@media (max-width: 576px) {
+  .row .col.size-5 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-6 {
+  grid-column: span 6;
+}
+@media (max-width: 576px) {
+  .row .col.size-6 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-7 {
+  grid-column: span 7;
+}
+@media (max-width: 576px) {
+  .row .col.size-7 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-8 {
+  grid-column: span 8;
+}
+@media (max-width: 576px) {
+  .row .col.size-8 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-9 {
+  grid-column: span 9;
+}
+@media (max-width: 576px) {
+  .row .col.size-9 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-10 {
+  grid-column: span 10;
+}
+@media (max-width: 576px) {
+  .row .col.size-10 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-11 {
+  grid-column: span 11;
+}
+@media (max-width: 576px) {
+  .row .col.size-11 {
+    grid-column: span 12;
+  }
+}
+.row .col.size-12 {
+  grid-column: span 12;
+}
+@media (max-width: 576px) {
+  .row .col.size-12 {
+    grid-column: span 12;
+  }
 }
 
 body {
